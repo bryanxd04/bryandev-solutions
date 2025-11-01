@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sobre mí - BryanDev Solutions</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    :root {
+      --primary: #004aad;
+      --secondary: #007bff;
+      --background: #f4f7fb;
+      --text: #222;
+      --card-bg: white;
+      --footer-bg: #003d82;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --primary: #66a3ff;
+        --secondary: #3385ff;
+        --background: #121212;
+        --text: #f4f4f4;
+        --card-bg: #1e1e1e;
+        --footer-bg: #0a2340;
+      }
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: var(--background);
+      color: var(--text);
+      line-height: 1.6;
+      transition: all 0.4s ease;
+    }
+
+    header {
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      color: white;
+      text-align: center;
+      padding: 60px 20px 40px;
+    }
+
+    header h1 {
+      font-size: 2.4rem;
+      margin-bottom: 10px;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    h2 {
+      color: var(--primary);
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    p {
+      text-align: justify;
+      margin-bottom: 20px;
+      font-size: 1.1rem;
+    }
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      margin-bottom: 30px;
+    }
+
+    .skill-tag {
+      background: var(--secondary);
+      color: white;
+      padding: 8px 15px;
+      border-radius: 25px;
+      font-size: 0.9rem;
+      transition: background 0.3s ease;
+    }
+
+    .skill-tag:hover {
+      background: var(--primary);
+    }
+
+    .contact {
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    .contact a {
+      display: inline-block;
+      margin: 10px;
+      padding: 10px 20px;
+      background: var(--secondary);
+      color: white;
+      border-radius: 5px;
+      text-decoration: none;
+      transition: background 0.3s ease;
+    }
+
+    .contact a:hover {
+      background: var(--primary);
+    }
+
+    .back-btn {
+      display: block;
+      width: 150px;
+      margin: 40px auto 0;
+      padding: 10px 0;
+      background: var(--primary);
+      color: white;
+      text-align: center;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: background 0.3s ease;
+    }
+
+    .back-btn:hover {
+      background: var(--secondary);
+    }
+
+    footer {
+      background-color: var(--footer-bg);
+      color: white;
+      text-align: center;
+      padding: 20px 10px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Sobre mí</h1>
+  </header>
+
+  <div class="container">
+    <p>
+      Ingeniero en Desarrollo y Gestión de Software con pasión por la tecnología y la innovación. 
+      Enfocado en crear soluciones digitales que combinen <strong>funcionalidad, diseño y experiencia de usuario</strong>, 
+      aplicando las mejores prácticas de desarrollo moderno.
+    </p>
+    <p>
+      Con experiencia en <strong>desarrollo web</strong>, <strong>aplicaciones Android</strong>, <strong>bases de datos</strong> 
+      y <strong>diseño UX/UI</strong>, utiliza herramientas como <strong>PHP, HTML, CSS, JavaScript, MySQL, Figma</strong> 
+      y <strong>Android Studio</strong>. 
+      Su objetivo es ofrecer proyectos eficientes, escalables y con un impacto positivo en el crecimiento de personas y negocios.
+    </p>
+
+    <h2>Habilidades técnicas</h2>
+    <div class="skills">
+      <span class="skill-tag">HTML</span>
+      <span class="skill-tag">CSS</span>
+      <span class="skill-tag">JavaScript</span>
+      <span class="skill-tag">PHP</span>
+      <span class="skill-tag">MySQL</span>
+      <span class="skill-tag">Bootstrap</span>
+      <span class="skill-tag">Figma</span>
+      <span class="skill-tag">Android Studio</span>
+      <span class="skill-tag">UX/UI</span>
+      <span class="skill-tag">GitHub</span>
+    </div>
+
+    <div class="contact">
+      <a href="mailto:rochabryan39@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i> Gmail</a>
+      <a href="https://wa.me/527551319753" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+      <a href="https://www.linkedin.com/in/bryan-rocha-moreno-401a59396" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+    </div>
+
+    <a href="index.html" class="back-btn">Volver</a>
+  </div>
+
+  <footer>
+    <p>© 2025 BryanDev Solutions | Desarrollado por Bryan Rocha Moreno</p>
+  </footer>
+</body>
+</html>
