@@ -198,6 +198,32 @@
       opacity: 0.8;
     }
 
+    /* Botón "Jugar ahora" */
+    .project-links {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+    }
+
+    .btn-link {
+      font-size: 0.8rem;
+      text-decoration: none;
+      padding: 6px 12px;
+      border-radius: 999px;
+      border: 1px solid var(--primary);
+      color: var(--primary);
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      transition: background 0.2s ease, color 0.2s ease, transform 0.1s ease;
+    }
+
+    .btn-link:hover {
+      background: var(--primary);
+      color: #fff;
+      transform: translateY(-1px);
+    }
+
     .back-btn {
       display: inline-flex;
       align-items: center;
@@ -302,46 +328,44 @@
       </article>
 
       <!-- PROYECTO 2: BUSCAMINAS WEB -->
-<article class="project-card">
-  <span class="project-tag">
-    <i class="fa-solid fa-code"></i> Web
-  </span>
+      <article class="project-card">
+        <span class="project-tag">
+          <i class="fa-solid fa-code"></i> Web
+        </span>
 
-  <!-- Imagen principal del juego (abre el juego al hacer clic) -->
-  <a href="https://bryanxd04.github.io/buscaminas-/" target="_blank">
-    <img
-      src="buscaminas.jpg"
-      alt="Captura del juego Buscaminas web"
-      class="project-main-img">
-  </a>
+        <!-- Imagen principal del juego (abre el juego al hacer clic) -->
+        <a href="https://bryanxd04.github.io/buscaminas-/" target="_blank">
+          <img
+            src="buscaminas.jpg"
+            alt="Captura del juego Buscaminas web"
+            class="project-main-img">
+        </a>
 
-  <h3 class="project-title">Buscaminas Web Responsive</h3>
-  <p class="project-role">Rol: diseño y desarrollo completo del juego</p>
-  <p class="project-desc">
-    Minijuego clásico de Buscaminas desarrollado para navegador y optimizado para dispositivos móviles.
-    Incluye contador de minas, temporizador e interacción fluida para pantallas táctiles y pantallas
-    de alta tasa de refresco.
-  </p>
+        <h3 class="project-title">Buscaminas Web Responsive</h3>
+        <p class="project-role">Rol: diseño y desarrollo completo del juego</p>
+        <p class="project-desc">
+          Minijuego clásico de Buscaminas desarrollado para navegador y optimizado para dispositivos móviles.
+          Incluye contador de minas, temporizador e interacción fluida para pantallas táctiles y de alta tasa de refresco.
+        </p>
 
-  <div class="chips">
-    <span class="chip">HTML</span>
-    <span class="chip">CSS</span>
-    <span class="chip">JavaScript</span>
-    <span class="chip">Responsive</span>
-  </div>
+        <div class="chips">
+          <span class="chip">HTML</span>
+          <span class="chip">CSS</span>
+          <span class="chip">JavaScript</span>
+          <span class="chip">Responsive</span>
+        </div>
 
-  <div class="project-footer">
-    <span>Proyecto personal · Juego Web</span>
-
-    <div class="project-links">
-      <a class="btn-link"
-         href="https://bryanxd04.github.io/buscaminas-/"
-         target="_blank">
-        <i class="fa-solid fa-play"></i> Jugar ahora
-      </a>
-    </div>
-  </div>
-</article>
+        <div class="project-footer">
+          <span>Proyecto personal · Juego Web</span>
+          <div class="project-links">
+            <a class="btn-link"
+               href="https://bryanxd04.github.io/buscaminas-/"
+               target="_blank">
+              <i class="fa-solid fa-play"></i> Jugar ahora
+            </a>
+          </div>
+        </div>
+      </article>
     </section>
 
     <a href="index.html" class="back-btn">
