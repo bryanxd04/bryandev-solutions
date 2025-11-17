@@ -148,6 +148,7 @@
       flex: 0 0 auto;
       opacity: 0.9;
       transition: transform 0.2s ease, opacity 0.2s ease;
+      cursor: pointer;
     }
 
     .thumbs img:hover {
@@ -195,29 +196,6 @@
       margin-top: 8px;
       font-size: 0.8rem;
       opacity: 0.8;
-    }
-
-    .project-links {
-      display: flex;
-      gap: 8px;
-    }
-
-    .btn-link {
-      font-size: 0.8rem;
-      text-decoration: none;
-      padding: 6px 10px;
-      border-radius: 999px;
-      border: 1px solid var(--primary);
-      color: var(--primary);
-      display: inline-flex;
-      align-items: center;
-      gap: 5px;
-      transition: background 0.2s ease, color 0.2s ease;
-    }
-
-    .btn-link:hover {
-      background: var(--primary);
-      color: #fff;
     }
 
     .back-btn {
@@ -273,55 +251,55 @@
   <main class="container">
     <div class="subheader">
       <h2>Proyectos recientes</h2>
-      <span style="font-size:0.85rem; opacity:0.8;"></span>
+      <span style="font-size:0.85rem; opacity:0.8;">
+        + Se irán agregando nuevos proyectos conforme los vaya publicando.
+      </span>
     </div>
 
     <section class="projects">
-      
-<!-- PROYECTO 1: CONSULTORIO MÉDICO -->
-<article class="project-card">
-  <span class="project-tag">
-    <i class="fa-solid fa-mobile-screen-button"></i> App Android
-  </span>
+      <!-- PROYECTO 1: CONSULTORIO MÉDICO -->
+      <article class="project-card">
+        <span class="project-tag">
+          <i class="fa-solid fa-mobile-screen-button"></i> App Android
+        </span>
 
-  <img src="consultorio.jpg" alt="Pantalla principal del Consultorio Médico" class="project-main-img">
+        <img src="consultorio.jpg" alt="Pantalla principal del Consultorio Médico" class="project-main-img">
 
-  <div class="thumbs">
-    <a href="medico1.jpg" target="_blank">
-      <img src="medico1.jpg" alt="Formulario de paciente">
-    </a>
-    <a href="medico2.jpg" target="_blank">
-      <img src="medico2.jpg" alt="Gestión de recetas">
-    </a>
-    <a href="medico3.jpg" target="_blank">
-      <img src="medico3.jpg" alt="Carpeta del paciente">
-    </a>
-    <a href="medico4.jpg" target="_blank">
-      <img src="medico4.jpg" alt="Inventario de medicamentos">
-    </a>
-  </div>
+        <div class="thumbs">
+          <a href="medico1.jpg" target="_blank">
+            <img src="medico1.jpg" alt="Formulario de paciente">
+          </a>
+          <a href="medico2.jpg" target="_blank">
+            <img src="medico2.jpg" alt="Gestión de recetas">
+          </a>
+          <a href="medico3.jpg" target="_blank">
+            <img src="medico3.jpg" alt="Carpeta del paciente">
+          </a>
+          <a href="medico4.jpg" target="_blank">
+            <img src="medico4.jpg" alt="Inventario de medicamentos">
+          </a>
+        </div>
 
-  <h3 class="project-title">Sistema de Consultorio Médico</h3>
-  <p class="project-role">Rol: desarrollo completo (frontend móvil, base de datos y lógica de negocio)</p>
-  <p class="project-desc">
-    Aplicación para un consultorio médico que permite registrar pacientes, gestionar recetas y diagnósticos,
-    buscar por folio y generar una carpeta completa del paciente con opción de exportar a PDF.
-    Incluye un módulo de inventario de medicamentos con altas, bajas y control de stock.
-  </p>
+        <h3 class="project-title">Sistema de Consultorio Médico</h3>
+        <p class="project-role">Rol: desarrollo completo (frontend móvil, base de datos y lógica de negocio)</p>
+        <p class="project-desc">
+          Aplicación para un consultorio médico que permite registrar pacientes, gestionar recetas y diagnósticos,
+          buscar por folio y generar una carpeta completa del paciente con opción de exportar a PDF.
+          Incluye un módulo de inventario de medicamentos con altas, bajas y control de stock.
+        </p>
 
-  <div class="chips">
-    <span class="chip">Android Studio</span>
-    <span class="chip">Java</span>
-    <span class="chip">SQLite</span>
-    <span class="chip">Material Design básico</span>
-    <span class="chip">Exportación PDF</span>
-  </div>
+        <div class="chips">
+          <span class="chip">Android Studio</span>
+          <span class="chip">Java</span>
+          <span class="chip">SQLite</span>
+          <span class="chip">Material Design básico</span>
+          <span class="chip">Exportación PDF</span>
+        </div>
 
-  <div class="project-footer">
-    <span>Proyecto académico · App móvil</span>
-    <!-- Eliminado el botón de demo -->
-  </div>
-</article>
+        <div class="project-footer">
+          <span>Proyecto académico · App móvil</span>
+        </div>
+      </article>
 
       <!-- PROYECTO 2: BUSCAMINAS WEB -->
       <article class="project-card">
@@ -329,7 +307,7 @@
           <i class="fa-solid fa-code"></i> Web
         </span>
 
-        <!-- Placeholder simple hasta que tengas screenshot del juego -->
+        <!-- Placeholder hasta que tengas screenshot del juego -->
         <div style="
           width: 100%;
           height: 180px;
@@ -362,12 +340,6 @@
 
         <div class="project-footer">
           <span>Proyecto personal · Juego Web</span>
-          <div class="project-links">
-            <!-- Aquí podrías poner el link cuando lo publiques en GitHub Pages -->
-            <a class="btn-link" href="#!" title="Enlace al juego próximamente">
-              <i class="fa-solid fa-play"></i> Ver juego próximamente
-            </a>
-          </div>
         </div>
       </article>
     </section>
