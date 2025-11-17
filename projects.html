@@ -78,20 +78,30 @@
       transform: translateY(-5px);
     }
 
-    .card i {
-      font-size: 40px;
-      color: var(--secondary);
+    .card img {
+      width: 100%;
+      max-width: 320px;
+      border-radius: 10px;
       margin-bottom: 15px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.25);
     }
 
     .card h3 {
-      margin-bottom: 10px;
+      margin-bottom: 8px;
       color: var(--primary);
     }
 
     .card p {
-      font-size: 1rem;
-      opacity: 0.9;
+      font-size: 0.95rem;
+      opacity: 0.95;
+      margin-bottom: 8px;
+    }
+
+    .tech {
+      font-size: 0.9rem;
+      margin-top: 8px;
+      color: var(--secondary);
+      font-weight: 500;
     }
 
     .back-btn {
@@ -127,25 +137,48 @@
   </header>
 
   <div class="container">
-    <p style="text-align:center;">Aquí podrás encontrar mis futuros proyectos y desarrollos más recientes.</p>
+    <p style="text-align:center;">
+      Aquí podrás encontrar algunos de mis proyectos desarrollados en Android Studio y web.
+    </p>
 
     <div class="projects">
+      <!-- PROYECTO 1: CONSULTORIO MÉDICO -->
       <div class="card">
-        <i class="fa-solid fa-code"></i>
-        <h3>Proyecto 1</h3>
-        <p>Próximamente</p>
+        <img src="consultorio-medico.png" alt="App Consultorio Médico">
+        <h3>Consultorio Médico – App Android</h3>
+        <p>
+          Aplicación móvil para la gestión de pacientes, recetas médicas, diagnósticos
+          y control de inventario de medicamentos en un consultorio médico.
+        </p>
+        <p class="tech">
+          Tecnologías: Android Studio, Java, XML, SQLite, PdfDocument
+        </p>
       </div>
 
+      <!-- PROYECTO 2: OTRA APP ANDROID (EDITA EL TEXTO CUANDO QUIERAS) -->
       <div class="card">
-        <i class="fa-solid fa-laptop-code"></i>
-        <h3>Proyecto 2</h3>
-        <p>Próximamente</p>
+        <img src="app-android-2.png" alt="Aplicación Android 2">
+        <h3>Aplicación Android – Gestión</h3>
+        <p>
+          Proyecto desarrollado en Android Studio enfocado en la gestión de información
+          y mejora de procesos mediante una interfaz sencilla e intuitiva.
+        </p>
+        <p class="tech">
+          Tecnologías: Android Studio, Java, XML, SQLite
+        </p>
       </div>
 
+      <!-- PROYECTO 3: BUSCAMINAS WEB -->
       <div class="card">
-        <i class="fa-solid fa-database"></i>
-        <h3>Proyecto 3</h3>
-        <p>Próximamente</p>
+        <img src="buscaminas-web.png" alt="Juego Buscaminas Web">
+        <h3>Juego Buscaminas Web</h3>
+        <p>
+          Minijuego clásico de Buscaminas desarrollado para web, con diseño responsive
+          y lógica implementada en JavaScript.
+        </p>
+        <p class="tech">
+          Tecnologías: HTML, CSS, JavaScript, GitHub Pages
+        </p>
       </div>
     </div>
 
